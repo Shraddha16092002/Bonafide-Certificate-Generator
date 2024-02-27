@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Message</title>
+    <style>
+        body{
+            /* background-image: linear-gradient(to right, midnightblue, navy,rgb(94, 94, 219), rgb(157, 157, 241), rgb(201, 201, 241), rgb(235, 235, 250) ); */
+            background-color: #337ab7;
+            justify-content: center;
+        }
+        .msg{
+            height: 400px;
+            width: 50%;
+            text-align: center;
+            /* border: 4px groove white ; */
+
+        }
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "montserrat", sans-serif;
+            color: white;
+        }
+        h2{
+            font-style: oblique;
+            color: yellow;
+        }
+        .signin_btn:hover{
+    box-shadow: inset 400px 0 0 0 #42c9d2;
+}
+.btn{
+    background: transparent;
+    color: #ffffff;
+    border: 3px solid #ededed;
+    border-radius: 100px;
+    padding: 12px 50px;
+    min-width: 200px;
+    display: inline-block;
+    font-family: "montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #337ab7;
+    -webkit-transition: ease-out 0.8s;
+    -moz-transition: ease-out 0.8s;
+    transition: ease-out 0.8s;
+}
+.btn:hover{
+    color: aliceblue;
+}
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="msg">
+        <h1>You have successfully applied for Bonafide Certificate !!</h1>
+        <h2>You will receive notification regarding the status of Bonafide Certificate on registered Email</h2>
+    </div><br><br>
+    <button class="btn signin_btn" onclick="backpage()">Back to Homepage</button>
+</center>
+</body>
+</html>
+<script>
+    function backpage()
+    {
+    window.location.href="user_home.html";
+
+}
+</script>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sign in page</title>
+        <style>
+            body{
+                /* background-image: url("https://c4.wallpaperflare.com/wallpaper/832/254/347/keyboards-mechanical-keyboard-red-black-wallpaper-preview.jpg"); */
+                background-color: #337ab7;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            div{
+                background-color: #ffffff;
+                height:600px;
+                width:500px;
+                border-radius: 50px;
+            }
+            h1{
+                font-size: 50px;
+                font-weight: bold;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            h3{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 50px;
+            }
+            .signup{
+                background-color:purple/*#337ab7*/;
+                outline: none;
+                color:white;
+                height: 50px;
+                width: 400px;
+                font-size: 20px; 
+                font-weight: bold; 
+                text-transform: uppercase;
+                border-radius: 20px;
+                margin:20px;
+                padding: auto;   
+                cursor: pointer;
+            }
+            .login{
+                background-color:#337ab7;
+                color:white;
+                /* backdrop-filter: blur(10px); */
+                height: 50px;
+                width: 400px;
+                font-size: 20px;  
+                font-weight: bold; 
+                text-transform: uppercase;
+                border-radius: 20px;
+                margin:auto;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: black;
+                border: 2px solid coral;
+            }
+            img{
+                height: 150px;
+            }
+
+            @media screen and (max-width: 900px){
+            body{
+                background-size: 100rem 100rem;
+            }
+            }
+
+        </style>
+    </head>
+    <body  >
+        <center>
+        <div>
+            <h1>Hello There!</h1>
+            <br><br>
+            <img src="https://i.pinimg.com/originals/82/0d/b3/820db3b14fb166503a9b95016f1dcab6.jpg"></img>
+            <h3>Verify your identity</h3>
+           <form action="signup.html">
+               <button class="signup" value="signup">Sign up </button>
+           </form>
+  
+        
+           <form action="login.html">
+               <button class="login" value="login">login</button>
+           </form>
+      
+        
+        </div>   
+        </center>
+    </body>
+</html>

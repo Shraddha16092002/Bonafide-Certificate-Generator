@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        body{
+            /* background-image: url("https://media.istockphoto.com/photos/modern-keyboard-wih-blue-log-in-button-picture-id638149354?b=1&k=20&m=638149354&s=170667a&w=0&h=K_dd1EuWBMmyU0A5IN4igEUROFozhvtj7CtJ0GswHLE="); */
+            /* https://data.whicdn.com/images/347644055/original.jpg */
+            background-repeat: no-repeat;
+            background-color: #337ab7;
+            background-size:cover;
+          
+        }
+        form{
+
+            padding-top: 30px; 
+            padding-left: 700px;
+        }
+        fieldset{
+            background-color: white;
+            padding-top: 20px;
+            height: 400px;
+            width: 600px;
+            border: #073964 solid;
+            border-radius: 20px ;
+        }
+        legend{
+            font-size: 50px;
+            font-weight: bold;
+            color: #000000;
+        }
+        .button {
+            background-color: #337ab7;
+            color: white;
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 20px;
+            margin-top: 40px;
+            align-self: center;
+        }
+        button:hover{
+            opacity: 0.7;
+        }
+        input {
+            background-color: rgb(240, 255, 255);
+            font-size: 20px;
+            border-color: #337ab7;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 25px ;
+            width: 60%;
+            box-sizing: border-box;
+            box-shadow: 10px black;
+            
+        }
+
+        label {
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+        .error{
+            color:red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 900px) {
+            body{
+                background: url("https://media.istockphoto.com/photos/modern-keyboard-wih-blue-log-in-button-picture-id638149354?b=1&k=20&m=638149354&s=170667a&w=0&h=K_dd1EuWBMmyU0A5IN4igEUROFozhvtj7CtJ0GswHLE=");
+                background-repeat: no-repeat;
+                background-size: 100rem 200rem;
+            }
+            form{
+                margin-top: 50rem;
+                margin-right: 100rem;
+            }
+        }
+        @media screen and (min-width: 900px) and (max-width: 1300px){
+            body{
+                background: url("https://media.istockphoto.com/photos/modern-keyboard-wih-blue-log-in-button-picture-id638149354?b=1&k=20&m=638149354&s=170667a&w=0&h=K_dd1EuWBMmyU0A5IN4igEUROFozhvtj7CtJ0GswHLE=");
+                background-repeat: no-repeat;
+                background-size: 100rem 100rem;
+            }
+            form{
+                margin-top: 10rem; 
+            }
+
+        }
+    </style>
+</head>
+<body >
+    <div>
+        
+        <form id="form" class="form" action="validation.php" method="post">
+        <fieldset>
+            <legend align="center">Login</legend> 
+            <center>
+            <div>
+            <label>Username : </label>
+            <input type="text" id="username" oninput="validation()" name="user" maxlength="50" placeholder="Enter your username" ><br>
+            <span id="a" class="error" > </span>
+            </div>
+
+            <div>
+            <label>Password : <span class="b"> </span></label>
+            <input type="password" id="password" oninput="validation()" name="password" maxlength="30" placeholder="Enter 8 digit password" ><br>
+            <span id="b" class="error"> </span>
+            </div>  
+            <button type="submit"  id="submit" class="button"  onsubmit="validation()">login</button><br>
+            </center>
+        </fieldset>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function validation(){
+            var username = document.getElementById('username');
+            var password = document.getElementById('password');
+            let flag = 1;
+
+            if(username.value == ""){
+                document.getElementById('a').innerHTML = "**Fill the username field";
+                flag = 0;
+            }
+            else{
+                document.getElementById('a').innerHTML = " ";
+                flag = 1;
+            }
+
+
+            
+            if( password.value == ""){
+                document.getElementById('b').innerHTML = "**password field is empty";
+                flag = 0;
+            }
+            
+            else if (password.value.length <= 7){
+                document.getElementById('b').innerHTML = "**Password must be of min 8 characters";
+                flag = 0;
+            }
+            else{
+                document.getElementById('b').innerHTML = " ";
+                flag = 1; 
+            }
+
+
+            if(flag){
+                return true;
+            }else{
+                return false;
+            }
+            
+        }
+    </script>
+</body>
+</html>

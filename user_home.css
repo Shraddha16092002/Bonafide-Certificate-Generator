@@ -1,0 +1,894 @@
+body{
+    background-image: url("https://media.istockphoto.com/photos/globe-showing-americas-on-white-keyboard-picture-id163942994?b=1&k=20&m=163942994&s=170667a&w=0&h=_S7dk01pPTiEGDcJp0B7_iFipqVUz9CM1BcuqOrXAos=");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+}
+div.menubar{
+    margin: 0 auto;
+}
+.nav{
+    overflow: hidden;
+    background-color: #337ab7;
+    margin: 0 auto;
+}
+.nav .menu{
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nav .menu-item:hover{
+    background: white;
+    color: black; 
+    opacity: 0.8;
+    border-bottom: 4px solid red;
+    border-radius: 40px;
+} 
+.nav .logo{
+    float: left;
+    padding: 10px 16px;
+    text-decoration: none;
+    height: 30px;
+}
+.dropbtn {  
+position: relative;
+float: left;
+color: white;
+right: -800px;
+}  
+
+.dropdown-content {  
+margin-top: 35px;
+right: 10px;
+position: absolute;  
+background-color: lightgrey;  
+min-width: 150px;  
+display:none;  
+z-index: 1;  
+}  
+.dropdown-content .x {  
+    background-color: #337ab7;
+color: white;  
+padding: 10px 10px;  
+text-decoration: none;  
+display: block;  
+}  
+.dropdown-content .x:hover {  
+background-color: white;
+opacity: 0.7;
+color: black; 
+
+}  
+.dropdown:hover .dropdown-content {  
+display: block;  
+}  
+.dropdown:hover .dropbtn {  
+background-color: grey;  
+}  
+.menu-icon{
+display: none;
+color: white;
+padding: 14px 16px;
+}
+@media screen and (max-width: 1000px) {
+    .nav{
+        width: 100rem;
+    }
+    .dropbtn {  
+        left: 700px;
+        position: relative;
+        float: right;
+        color: white;
+    }   
+    .dropdown-content{
+        margin-right: -600px;
+    }
+}
+@media screen and (max-width: 600px){
+    .nav{
+        width: 100rem;
+    }
+    .nav a{
+        float: none;
+        width: 100%;
+    }
+    .nav .logo{
+        float: none;
+        width: 10%;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 18px;
+        color: white;
+        padding: 14px 16px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .dropbtn {  
+        position: relative;
+        float: left;
+        color: white;
+    } 
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px){
+    .dropbtn {  
+        right: -300px;
+        position: relative;
+        float: left;
+        color: white;
+    }  
+}
+.name{
+    font-size: 100px;
+    font-weight: bolder;
+    color: #337ab7;
+    text-align: right;
+    padding-right: 50px;
+}
+.title{
+    color: midnightblue;
+    text-align: right;
+    padding-right: 50px;
+    font-style: italic;
+}
+.clg{
+    background-color: white;
+}
+
+.inst{
+    background-color:whitesmoke;
+    color: #337ab7;
+    width: 100%;
+    float: none;
+    margin-top: 70%;
+    box-shadow: 2px 10px 28px 15px #337ab7;
+}
+@media screen and (max-width: 1000px) {
+.inst{
+
+    background-color:whitesmoke;
+    width: 100rem;
+    margin-top: 200%;
+}
+}
+.h1{
+    margin-top: 330px;
+    color:white;
+}
+
+ .button2{
+    font-size: xx-large;
+    height: 100px;
+    width: 400px;
+    background-color: #337ab7;
+    color:white;
+    border-radius: 50px;
+    border: solid black;
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+ button:hover{
+    opacity: 0.7;
+}
+.d{
+    color:black;
+}
+.i{
+    color:red;
+}
+.v{
+    color:purple;
+}
+.s{
+    color:green;
+}
+@media screen and (max-width: 1000px) {
+    .h1{
+        margin-left: 200px;
+        width: 80rem;
+    }
+     .button2{
+        margin-left: 700px;
+    }
+}
+.blocks{
+    display: flex;
+    margin-top: 400px;
+    
+}
+.vision_mission{
+    padding: 9px;
+    margin-left: 200px;
+    border: 3px solid black;
+    height: 310px;
+    width: 330px;
+    background-image: url("https://media.istockphoto.com/photos/magnifying-loupe-on-the-laptop-keyboard-picture-id147860345?k=20&m=147860345&s=612x612&w=0&h=Bng_rH3oxnl6CJ7k1QYBtNhb47dqXNnp_rQr2fcCY7c=");
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border: 3px solid rgba(192, 16, 75, 0.918);
+    box-shadow:-8px 9px 14px black;
+}
+.heading{
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    /* text-decoration:underline; */
+    text-shadow: 1px 8px 10px red;
+}
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 60%;
+    transform: translate(-50%, -50%) scale(0);
+    /* background: rgba(57, 117, 195, 0.63); */
+    background-image: url("http://gmgc.edu.in/gmcc/assets/img/vision.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: black;
+    width: 1000px;
+    height: 600px;
+    z-index: 2;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 500px;
+    box-sizing: border-box;
+}
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    /* background: #fff; */
+    color:#222;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.popup .close-btn:hover{
+    background-color: #222;
+    color: #fff;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+.vm1{
+    margin-top: 10%;
+    background-color: #337ab7;
+    color: white;
+}
+
+.vm2{
+    margin-top: 80px;
+    background-color: #337ab7;
+    color: white;
+}
+.depts{
+    padding: 9px;
+    /* margin: auto; */
+    margin-left: 200px;
+    border: 3px solid black;
+    height: 310px;
+    width: 330px;
+    background-image: url("https://media.istockphoto.com/photos/files-and-folders-network-picture-id954199216?k=20&m=954199216&s=170667a&w=0&h=SvgXoL_vphDf9kaBgkpGqRUMpI6DcZCTx_m8rPqwnMU=");
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    border: 3px solid rgba(192, 16, 75, 0.918);
+    box-shadow:-8px 9px 14px black;
+}
+.view{
+    height: 50px;
+    width:150px;
+    border-radius: 30px;
+    font-size: large;
+    margin-top: 80px;
+    color: #276296;
+}
+.view:hover{
+    background-color: black;
+    color:white;
+}
+.popup1 .overlay1,
+.popup2 .overlay2{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+.popup1 .content1,
+.popup2 .content2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 60%;
+    transform: translate(-50%, -50%) scale(0);
+    background-image: url("https://t3.ftcdn.net/jpg/04/40/07/88/360_F_440078858_wQuMz5yLCvTzl4QA2ZWzO7IS8O1mNcwA.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    width: 100%;
+    height: 410px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup1 .close-btn1,
+.popup2 .close-btn2{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    /* background: #fff; */
+    color:#fff;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.popup1 .close-btn1:hover,
+.popup2 .close-btn2:hover{
+    background-color: #fff;
+    color: #222;
+}
+.popup1.active .overlay1,
+.popup2.active .overlay2{
+    display: block;
+}
+.popup1.active .content1,
+.popup2.active .content2{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+.depts1{
+    display: flex;
+}
+.civil{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    text-align: center;
+    border: 5px groove red;
+}
+.text1{
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    font-size: large;
+    font-weight: bold;
+    
+}
+.mech{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center;
+    border: 5px groove red;
+}
+.text2{
+    position: absolute;
+    bottom: 10px;
+    left: 293px;
+    font-size: large;
+    font-weight: bold;
+}
+.electrical{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center;  
+    border: 5px groove red;
+}
+.text3{
+    position: absolute;
+    bottom: 10px;
+    left: 560px;
+    font-size: large;
+    font-weight: bold;
+}
+.comp{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center; 
+    border: 5px groove red;
+}
+.text4{
+    position: absolute;
+    bottom: 10px;
+    left: 820px;
+    font-size: large;
+    font-weight: bold;
+}
+.infotech{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center; 
+    border: 5px groove red;
+}
+.text5{
+    position: absolute;
+    bottom: 10px;
+    left: 1080px;
+    font-size: large;
+    font-weight: bold;
+}
+.next{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.previous{
+    margin-top: 100px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.automob{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    text-align: center;
+    margin-left: 30px;
+    border: 5px groove red;
+}
+.text6{
+    position: absolute;
+    bottom: 10px;
+    left: 75px;
+    font-size: large;
+    font-weight: bold;
+}
+.ddgm{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center;
+    border: 5px groove red;
+}
+.text7{
+    position: absolute;
+    bottom: 0px;
+    left: 320px;
+    right: 800px;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 174px;
+}
+.idd{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center; 
+    border: 5px groove red;  
+}
+.text8{
+    position: absolute;
+    bottom: 5px;
+    left: 590px;
+    right: 570px;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 135px;
+}
+.e_tc{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center; 
+    /* border-radius: 400px; */
+    border: 5px groove red;
+}
+.text9{
+    position: absolute;
+    bottom: 5px;
+    left: 820px;
+    right: 280px;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 145px;
+}
+.plastic{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center;
+    border: 5px groove red;
+}
+.text10{
+    position: absolute;
+    bottom: 10px;
+    left: 1150px;
+    /* color: #00437e; */
+    font-size: large;
+    font-weight: bold;
+}
+.a{
+    background-color: midnightblue;
+    color: white;
+
+}
+.a:hover{
+    /* background-color: rgba(4, 115, 241, 0.7); */
+    color: red;
+}
+.a:hover{
+    
+    color: red;
+}
+.blocks1{
+    display: none;
+}
+#content{
+    display: none;
+}
+#content1{
+    display: none;
+}
+#content2{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .blocks{
+        display: none;
+    }
+    .depts1{
+        display: none;
+    }
+    .blocks1{
+        display: flex;
+        margin-top: 400px;
+    }
+    .vision_mission1{
+        padding: 9px;
+        margin-left: 500px;
+        border: 3px solid black;
+        height: 310px;
+        width: 500px;
+        background-image: url("https://media.istockphoto.com/photos/magnifying-loupe-on-the-laptop-keyboard-picture-id147860345?k=20&m=147860345&s=612x612&w=0&h=Bng_rH3oxnl6CJ7k1QYBtNhb47dqXNnp_rQr2fcCY7c=");
+        background-size: 70% 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        border: 3px solid rgba(192, 16, 75, 0.918);
+        box-shadow:-8px 9px 14px black;
+    }
+    .dept1{
+        padding: 9px;
+        margin-left: 300px;
+        border: 3px solid black;
+        height: 310px;
+        width: 500px;
+        background-image: url("https://media.istockphoto.com/photos/files-and-folders-network-picture-id954199216?k=20&m=954199216&s=170667a&w=0&h=SvgXoL_vphDf9kaBgkpGqRUMpI6DcZCTx_m8rPqwnMU=");
+        background-size: 70% 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+        color: white;
+        border: 3px solid rgba(192, 16, 75, 0.918);
+        box-shadow:-8px 9px 14px black;
+    }
+    .view1{
+        height: 50px;
+        width:150px;
+        border-radius: 30px;
+        font-size: large;
+        margin-top: 80px;
+        color: #276296;
+    }
+    .view1:hover{
+        background-color: black;
+        color:white;
+    }
+    #content{
+        background-color: whitesmoke;
+        width: 100rem;
+        height: 700px;
+        display: flex;
+    }
+    #v_m{
+        color: black;
+        font-size: 25px;
+        margin-right: 50px;
+    }
+    #vm_img{
+        margin-top: 60px;
+        margin-left: 60px;
+        width:100px;
+        height: 100px;
+    }
+    #v_m1{
+        color: black;
+        font-size: 25px;
+        margin-left: 300px;
+    }
+    .vm1{
+        margin-top: 10%;
+        background-color: #337ab7;
+        color: white;
+    }
+    .vm2{
+        margin-top: 10%;
+        background-color: #337ab7;
+        color: white;
+    }
+    #content1{
+        margin-top: -50px;
+        background-image: url("https://t3.ftcdn.net/jpg/04/40/07/88/360_F_440078858_wQuMz5yLCvTzl4QA2ZWzO7IS8O1mNcwA.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100rem;
+        height: 30rem;
+        display: block;
+    }
+    #content2{
+        background-image: url("https://t3.ftcdn.net/jpg/04/40/07/88/360_F_440078858_wQuMz5yLCvTzl4QA2ZWzO7IS8O1mNcwA.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100rem;
+        height: 30rem;
+        display: block;
+    }
+    #dept{
+        padding-top: 10px;
+        font-size: 60px;
+        color: white;
+    }
+    #depts1{
+        display: flex;
+    }
+    #depts1{
+        display: flex;
+    }
+    #civil{
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center;
+        border: 5px groove red;
+    }
+    #mech{
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center;
+        border: 5px groove red;
+    }
+    #electrical{
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center;  
+        border: 5px groove red;
+    }
+    #comp{
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center; 
+        border: 5px groove red;
+    }
+    #infotech{
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center; 
+        border: 5px groove red;
+    }
+    #automob{
+        height: 250px;
+        width: 280px;
+        text-align: center;
+        margin-left: 20px;
+        border: 5px groove red;
+    }
+    #ddgm{
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center;
+        border: 5px groove red;
+    }
+    #idd{
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center; 
+        border: 5px groove red;  
+    }
+    #e_tc{
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center; 
+        border: 5px groove red;
+    }
+    #plastic{
+        position: absolute;
+        height: 250px;
+        width: 280px;
+        margin-left: 20px;
+        text-align: center;
+        border: 5px groove red;
+    }
+
+}
+.inst{
+    background-color:whitesmoke;
+    color: #337ab7;
+    width: 100%;
+    float: none;
+    margin-top: 70%;
+    box-shadow: 2px 10px 28px 15px #337ab7;
+}
+@media screen and (max-width: 1000px) {
+.inst{
+
+    background-color:whitesmoke;
+    width: 100rem;
+    margin-top: 100%;
+}
+}
+.inst_style{
+    color:deepskyblue;
+    font-size: 50px;
+}
+.inst0{
+    
+    display: flex;
+} 
+.inst1{
+    margin-left: 50px;
+    padding-right: 50px;
+    width: 120%;
+    padding-top: 20px;
+}
+.inst2{
+    margin-left: 80px;
+    padding-right: 50px;
+    width: 250%
+}
+.inst3{
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 200%; 
+}
+.about_us{
+    background-image: url("https://asianprefabhomes.com/assets/img/aboutus_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow:10px 9px 14px red;
+    display: flex;
+    height: 500px;
+}
+.blog1{
+    color: white;
+    font-size: large;
+    margin-right: 100px;
+    border-right: 1px solid white;
+    padding-right: 40px;
+    padding-left: 30px;
+}
+.blog2{
+    color: white;
+    font-size: large;
+    margin-left: 400px;
+    border-left: 1px solid white;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+h3{
+    color: #041c31;
+    padding-left: 30px;
+}
+.h3{
+    background-color: white;
+    border-radius: 30px;
+}
+.h3_1{
+    background-color: white;
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+    padding-right: 30px;
+}
+@media screen and (max-width: 1000px){
+    .about_us{
+        width: 100rem;
+    }
+}
+.footer{
+    margin-top: 400px;
+    height: 300px;
+    width:100%;
+    background-color: #276296;   
+    align-items: center; 
+    display: flex;  
+} 
+@media screen and (max-width: 1000px){
+    .footer{
+        width: 100rem;
+    } 
+}
+.contact_us{
+    color:white;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+.header1{
+    color: white;
+    opacity:0.5;
+    font-size: large;
+    font-weight: bold;
+}
+.header2{
+    color:white;
+    opacity:0.5;
+    font-size: large;
+    font-weight: bold;
+}
+.clg_contact{
+    color:white;
+    margin-left: 100px;
+}

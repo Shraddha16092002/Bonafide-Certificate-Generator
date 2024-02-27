@@ -1,0 +1,320 @@
+body{
+    background-image: url("https://media.istockphoto.com/photos/globe-showing-americas-on-white-keyboard-picture-id163942994?b=1&k=20&m=163942994&s=170667a&w=0&h=_S7dk01pPTiEGDcJp0B7_iFipqVUz9CM1BcuqOrXAos=");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+}
+div.menubar{
+    margin: 0 auto;
+}
+.nav{
+    overflow: hidden;
+    background-color: #337ab7;
+    margin: 0 auto;
+}
+.nav .menu{
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nav .menu-item:hover{
+    background: white;
+    color: black; 
+    opacity: 0.8;
+    border-bottom: 4px solid red;
+    border-radius: 40px;
+} 
+.nav .logo{
+    float: left;
+    padding: 10px 16px;
+    text-decoration: none;
+    height: 30px;
+}
+.dropbtn {  
+position: relative;
+float: left;
+color: white;
+right: -700px;
+}  
+
+.dropdown-content {  
+margin-top: 35px;
+right: 10px;
+position: absolute;  
+background-color: lightgrey;  
+min-width: 150px;  
+display:none;  
+z-index: 1;  
+}  
+.dropdown-content .x {  
+    background-color: #337ab7;
+color: white;  
+padding: 10px 10px;  
+text-decoration: none;  
+display: block;  
+}  
+.dropdown-content .x:hover {  
+background-color: white;
+opacity: 0.7;
+color: black; 
+
+}  
+.dropdown:hover .dropdown-content {  
+display: block;  
+}  
+.dropdown:hover .dropbtn {  
+background-color: grey;  
+}  
+.menu-icon{
+display: none;
+color: white;
+padding: 14px 16px;
+}
+@media screen and (max-width: 1000px) {
+    .nav{
+        width: 100rem;
+    }
+    .dropbtn {  
+        left: 700px;
+        position: relative;
+        float: right;
+        color: white;
+    }   
+    .dropdown-content{
+        margin-right: -600px;
+    }
+}
+@media screen and (max-width: 600px){
+    .nav{
+        width: 100rem;
+    }
+    .nav a{
+        float: none;
+        width: 100%;
+    }
+    .nav .logo{
+        float: none;
+        width: 10%;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 18px;
+        color: white;
+        padding: 14px 16px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .dropbtn {  
+        position: relative;
+        float: left;
+        color: white;
+    } 
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px){
+    .dropbtn {  
+        right: -300px;
+        position: relative;
+        float: left;
+        color: white;
+    }  
+}
+
+.clg{
+    background-color: white;
+}
+@media screen and (max-width: 900px){
+    .clg{
+        width: 100rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    .clg{
+        width: 100rem;
+    }
+}
+.main{
+    height:600px;
+    width:600px;
+    text-align: center;
+}
+.name{
+    font-size: 100px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+}
+.title{
+    color: orange;
+    text-align: center;
+    padding-right: 50px;
+    font-style: oblique;
+}
+.title1{
+    margin-top: 50px;
+    text-align: center;
+    padding-right: 50px;
+    color:midnightblue;
+    font-family: "montserrat", sans-serif;
+
+}
+.signin{
+    text-align: center; 
+}
+.btn{
+    background: transparent;
+    color: #337ab7;
+    border: 3px solid #337ab7;
+    border-radius: 100px;
+    padding: 12px 50px;
+    min-width: 200px;
+    display: inline-block;
+    font-family: "montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #337ab7;
+    -webkit-transition: ease-out 0.8s;
+    -moz-transition: ease-out 0.8s;
+    transition: ease-out 0.8s;
+}
+.btn:hover{
+    color: aliceblue;
+}
+.signin_btn:hover{
+    box-shadow: inset 400px 0 0 0 #337ab7;
+}
+@media screen and (max-width: 900px){
+    .main{
+        margin-left: 500px;
+    }
+}
+
+.inst{
+    background-color:whitesmoke;
+    color: #337ab7;
+    width: 100%;
+    float: none;
+    margin-top: 70%;
+    box-shadow: 2px 10px 28px 15px #337ab7;
+}
+@media screen and (max-width: 1000px) {
+.inst{
+
+    background-color:whitesmoke;
+    width: 100rem;
+    margin-top: 200%;
+}
+}
+.inst_style{
+    color:deepskyblue;
+    font-size: 50px;
+}
+.inst0{
+    display: flex;
+} 
+.inst1{
+    margin-left: 50px;
+    padding-right: 50px;
+    width: 120%;
+    padding-top: 20px;
+}
+.inst2{
+    margin-left: 80px;
+    padding-right: 50px;
+    width: 250%;
+}
+.inst3{
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 200%; 
+}
+.about_us{
+    background-image: url("https://asianprefabhomes.com/assets/img/aboutus_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow:10px 9px 14px red;
+    display: flex;
+}
+.blog1{
+    color: white;
+    font-size: large;
+    margin-right: 100px;
+    border-right: 1px solid white;
+    padding-right: 40px;
+    padding-left: 30px;
+}
+.blog2{
+    color: white;
+    font-size: large;
+    margin-left: 400px;
+    border-left: 1px solid white;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+h3{
+    color: #041c31;
+    padding-left: 30px;
+}
+.h3{
+    background-color: white;
+    border-radius: 30px;
+}
+.h3_1{
+    background-color: white;
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+    padding-right: 30px;
+}
+@media screen and (max-width: 1000px){
+    .about_us{
+        width: 100rem;
+    }
+}
+.footer{
+    margin-top: 900px;
+    height: 300px;
+    width:100%;
+    background-color: #276296;   
+    align-items: center; 
+    display: flex;  
+} 
+@media screen and (max-width: 1000px){
+    .footer{
+        width:100rem;
+    } 
+}
+.contact_us{
+    color:white;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+.header1{
+    color: white;
+    opacity:0.5;
+    font-size: large;
+    font-weight: bold;
+}
+.header2{
+    color:white;
+    opacity:0.5;
+    font-size: large;
+    font-weight: bold;
+}
+.clg_contact{
+    color:white;
+    margin-left: 100px;
+}

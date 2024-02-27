@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3494b96017.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="home.css" media="all">
+    <title>Bonafide Generator</title>
+</head>
+<body>
+    <div class="menubar">
+    <div class="nav">
+        <img class="logo" src="https://www.divs.be/images/Logo/DIVS_website.png">
+        <a class="menu-icon" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></a>
+        <div id="menuList">
+            <a class="menu menu-item" href=""><i class="fa-solid fa-house"></i> Home</a>
+            <a class="menu menu-item" href="#about_us"><i class="fa-solid fa-users-rectangle"></i> About Us</a>
+            <a class="menu menu-item" href="#inst"><i class="fa-solid fa-circle-info"></i> Instructions</a>
+            <a class="menu menu-item" href="#contact_us"><i class="fa-solid fa-square-phone"></i> Contact Us</a>
+        <div class="dropdown menu">
+            <a class="dropbtn"><i class="fa fa-user-circle fa-2x"></i></a>
+                <div class="dropdown-content">  
+                    <a href="signin.html" class="x" >User Login</a> 
+                    <a href="admin_login.html" class="x">Admin Login</a>
+                </div> 
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="body"> 
+
+        <center>
+        <div class="clg">
+            <img class="img" src="https://gpnashik.ac.in/new-site/images/logo.png">
+        </div>
+
+        <div class="main">
+        <h1 class="name"></h1>
+        <h2 class="title1" style="padding-top: 100px;">Are you facing problem to apply for bonafide in your busy college schedule?</h2>
+        <h1 class="title">Apply for Bonafide</h1>
+        
+        <div class="signin">
+            <button class="btn signin_btn" onclick="signin()">SIGN IN</button>
+        </div>
+        </div>
+    </center>
+    </div>
+
+
+        <div class="inst" id="inst">
+            <center>
+                <h1 class="inst_style">Instructions</h1><hr width="30%">
+                
+            </center>
+            <div class="inst0">
+            <div class="inst1">
+            <h1 >Our Home page consist of -</h1>
+            <h4 >i. Vision and Mission and information about departments of college.</h4>
+            <h4 >ii.  About us section provides information about our website.</h4>
+            <h4 >iii. Query section allows user to ask queries through mail.</h4>
+            <h4 >iv.  Contact us section provide details about phone number and address of the College.</h4>
+            </div>
+            <div class="inst2">
+            <h1 >User Section:</h1>
+            <h3 >If you are a new user create the account by clicking on sign up and then login else click on login.
+            Once login successfully user will be redirected to user home page through which user can perform process to access bonafide.</h3>
+            <h4 >Steps to access bonafide certificate</h4>
+            <h4 >i.  Select the reason for requirement of bonafide certificate.</h4>
+            <h4 >ii. Fill the details and download the application form.</h4>
+            <h4 >iii. Upload the required documents along with downloaded application form.</h4>
+            <h4 >iv. User must logout after the completion of process.</h4>
+            <h3 >User will receive the bonafide certificate once approved by admin.</h3>
+            </div>
+            <div class="inst3">
+            <h1 >Admin :</h1>
+            <h4 class=>i. If request approved, bonafide certificate will be sent to user's registered email</h4>
+            <h4 class=>ii. If request rejected, the reason of rejection will be sent to user's registered email</h4>
+            </div>
+            </div>
+           </div>
+       
+    <script type="text/javascript">
+        function signin(){
+            // document.getElementById("popup-1").classList.toggle("active");
+            window.location.href="signin.html";
+        }
+        function togglePopup(){
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+
+        function togglePopup1(){
+            document.getElementById("popup-2").classList.toggle("active");
+        }
+
+        function togglePopup2(){
+            document.getElementById("popup-3").classList.toggle("active");
+        }
+
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "250px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+
+        
+    </script>
+
+       <div class="about_us" id="about_us">
+           <div class="blog1">
+                <h3 class="h3">About DIVS Bonafide Generator</h3>
+                <p class="content"><b><i>DIVS Bonafide Generator</i></b> is specially designed for students.
+                    Our website is initiative to provide solution to the problems faced by students while accessing bonafide certificate.
+                    Bonafide certificate is one of the important document required for many important forms but accessing it is very lengthy and time consuming process.
+                    By considering all these problems Our website creates a platform as per students and management convenience</p>
+           </div>
+           <div class="blog2">
+               <center>
+               <h3 class="h3_1">Why 'DIVS' ?</h3>
+               </center>
+                <p class="content">To access bonafide certificate students need to submit all the documents to college office manually and need to check the status everyday till he/she receives it.
+                    During covid 19 pandemic, education was conducted in online mode but students need to go to college office for getting bonafide certificate.
+                    Our website save student's time, provide students with certificate as early as possible, avoiding to visit office repeatively, and for proper management of data required while issuing certificate.
+                    </p>
+           </div>
+       </div>
+
+       <div class="footer" id="contact_us">
+           <div class="contact_us">
+               <p class="header1">Contact Us</p>
+                <p><i class="fa-solid fa-phone"></i> 97XXXXXXXX</p>
+                <p><i class="fa-solid fa-at"></i> divs975@gmail.com</p>
+                <p><i class="fa-solid fa-message"></i> 95XXXXXXXX</p>
+           </div>
+           <div class="clg_contact">
+               <p class="header2">  Government Polytechnic Nashik</p>
+                <p><i class="fa-solid fa-location-dot"></i>  Chehedi (B), Samangaon Road, Nashik-Road,
+                Nashik- 422 101, Maharashtra (India)</p>
+               <p><i class="fa-solid fa-phone"></i>  +91 253 2461221</p>
+               <p><i class="fa-solid fa-envelope"></i>  office.gpnashik@dtemaharashtra.gov.in</p>
+               <p>StatCounter - Free Web Tracker and Counter</p>
+           </div>
+       </div>
+
+
+
+</body>
+</html>

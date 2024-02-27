@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3494b96017.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="admin_home.css">
+    <title>admin</title>
+</head>
+<body>
+    <div class="menubar">
+        <div class="nav">
+            <img class="logo" src="https://www.divs.be/images/Logo/DIVS_website.png">
+    
+            <a class="menu-icon" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></a>
+            <div id="menuList">
+                <a class="menu menu-item" href="">Home</a>
+                <!-- <a class="menu menu-item" href="#about_us"> About Us</a>
+                <a class="menu menu-item" href="#inst"> Instructions</a> -->
+                <a class="menu menu-item" href="#contact_us"> Contact Us</a>
+            <div class="dropdown menu">
+                <a class="dropbtn"><i class="fa fa-user-circle fa-2x"></i></a>
+                    <div class="dropdown-content">  
+                        <a href="signin.html" class="x" >Logout</a> 
+                    </div> 
+            </div>
+            </div>
+        </div>
+    </div>
+        <center>
+            
+            <button class="button2" onclick="req()">View Request Details</button>
+        </center>
+
+ 
+        <div class="footer" id="contact_us">
+            <div class="contact_us">
+                <p class="header1">Contact Us</p>
+                 <p><i class="fa-solid fa-phone"></i> 97XXXXXXXX</p>
+                 <p><i class="fa-solid fa-at"></i> divs975@gmail.com</p>
+                 <p><i class="fa-solid fa-message"></i> 95XXXXXXXX</p>
+            </div>
+            <div class="clg_contact">
+                <p class="header2">  Government Polytechnic Nashik</p>
+                 <p><i class="fa-solid fa-location-dot"></i>  Chehedi (B), Samangaon Road, Nashik-Road,
+                 Nashik- 422 101, Maharashtra (India)</p>
+                <p><i class="fa-solid fa-phone"></i>  +91 253 2461221</p>
+                <p><i class="fa-solid fa-envelope"></i>  office.gpnashik@dtemaharashtra.gov.in</p>
+                <p>StatCounter - Free Web Tracker and Counter</p>
+ 
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+    
+
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "250px";
+                }
+                else{
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+            function req(){
+            window.location.href="xit.php";
+                
+            }
+    
+          
+        </script>
+
+</body>
+</html>

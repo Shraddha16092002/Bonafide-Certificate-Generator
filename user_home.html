@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link >
+    <script src="https://kit.fontawesome.com/3494b96017.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="user_home.css">
+    <title>user home page</title>
+</head>
+<body>
+    <div class="menubar">
+        <div class="nav">
+            <img class="logo" src="https://www.divs.be/images/Logo/DIVS_website.png">
+    
+            <a class="menu-icon" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></a>
+            <div id="menuList">
+                <a class="menu menu-item" href="">Home</a>
+                <a class="menu menu-item" href="#about_us"> About Us</a>
+                <a class="menu menu-item" href="#inst"> Instructions</a>
+                <a class="menu menu-item" href="#contact_us"> Contact Us</a>
+            <div class="dropdown menu">
+                <a class="dropbtn"><i class="fa fa-user-circle fa-2x"></i></a>
+                    <div class="dropdown-content">  
+                        <a href="signin.html" class="x" >Logout</a> 
+                    </div> 
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+    <h1 class="h1"><span style="color: black;" class="w">Welcome to </span><span class="d">D</span><span class="i">I</span><span class="v">V</span><span class="s">S</span></h1>
+    <form action="reason.php">
+    <button class="button2">Generate Bonafide</button>
+    </form>
+    </center>
+
+    <div class="blocks">
+        <div class="vision_mission" id="vision_mission" >
+            <p class="heading">Vision and Mission</p>
+            <button class="view" onclick="togglePopup()">View</button>
+        </div>
+
+        <div class="depts">
+            <p class="heading">Departments</p>
+            <button class="view" onclick="togglePopup1()">View</button>
+        </div>
+    </div> 
+
+    <div class="blocks1">
+        <div class="vision_mission1" id="vision_mission1" >
+            <p class="heading">Vision and Mission</p>
+            <button class="view"> <a href="#content" class="view1">View</a></button>
+        </div>
+
+        <div class="dept1">
+            <p class="heading">Departments</p>
+            <button class="view"><a href="#content1" class="view1">View</a></button>
+        </div>
+    </div> 
+
+    <div class="popup" id="popup-1">
+         <div class="overlay"></div>
+         <div class="content" >
+             <div class="close-btn" onclick="togglePopup()">&times;</div>
+                 <h1 class="vm1">Vision</h1>
+                 <p>To be a premier Technical Training and Development Institute catering to the skill and professional development in multi-domain for Successful employment/self-employment by offering certified and accredited NSQF compliant programmes. The Institute shall be the center for Excellence in skill development and community development through different training programmes, business incubation and Entrepreneurship development.</p>
+                 <h1 class="vm2">Mission</h1>
+                 <p>The Government Polytechnic, Nashik, an Autonomous Institute of Government of Maharashtra has the Mission to provide Education for skill Development, Engineering Diploma and continuing education Programmes for enhancement of employability skills of the aspirants in the job/self-employment through continually developing quality learning systems. The Institute aims at holistic and the student centric education in collaboration with business, industry and having practice based education.</p>
+         </div>
+     </div>
+     
+     <div class="popup1" id="popup-2">
+         <div class="overlay1"></div>
+         <div class="content1" >
+             <div class="close-btn1" onclick="togglePopup1()">&times;</div>
+             <h1 class="dept">Departments</h1>
+             <div class="depts1">
+                 <img class="civil" src="https://www.accurate.in/engg/img/page/civil-engineering-branch.jpg">
+                 <div class="text1"><a class="a" href="https://gpnashik.ac.in/Department/ce_profile#">Civil Engineering</a></div>
+                 <img class="mech" src="https://www.contaipolytechnic.com/wp-content/uploads/2015/09/engineering_mechanical_3042380_cropped.jpg">
+                 <div class="text2"><a class="a" href="https://gpnashik.ac.in/Department/me_profile#">Mechnical Engineering</a></div>
+                 <img class="electrical" src="https://www.mamse.in/img/eee.jpg">
+                 <div class="text3"><a class="a" href="https://gpnashik.ac.in/Department/ee_profile#">Electrical Engineering</a></div>
+                 <img class="comp" src="https://us.123rf.com/450wm/peshkova/peshkova2006/peshkova200631860/149692475-double-exposure-of-mans-hands-typing-over-computer-keyboard-and-science-theme-hologram-drawing-top-v.jpg?ver=6">
+                 <div class="text4"><a class="a" href="https://gpnashik.ac.in/Department/cm_profile#">Computer Technology</a></div>
+                 <img class="infotech" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&w=1000&q=80">
+                 <div class="text5"><a class="a" href="https://gpnashik.ac.in/Department/if_profile#">Information Technology</a></div>
+                 <h1 class="next" onclick="togglePopup1();togglePopup2()"><i class="fa-solid fa-angle-right fa-3px"></i></h1>
+             </div>
+         </div>
+     </div>
+
+     <div class="popup2" id="popup-3">
+        <div class="overlay2"></div>
+        <div class="content2">
+            <div class="close-btn2" onclick="togglePopup2()">&times;</div>
+            <h1 class="dept">Departments</h1>
+            <div class="depts1">
+                <h1 class="previous" onclick="togglePopup1();togglePopup2()"><i class="fa-solid fa-angle-left"></i></h1>
+                <img class="automob" src="https://uswfoxtail.blob.core.windows.net/foxtail-prod-uploads/images/ThinkstockPhotos-15441.8821dc0b.fill-450x341.format-jpeg.jpg">
+                <div class="text6"><a class="a" href="https://gpnashik.ac.in/Department/ae_profile#">Automobile Engineering</a></div>
+                <img class="ddgm" src="https://drive.uqu.edu.sa/_/dfad/images/%D8%A7%D8%B2%D9%8A%D8%A7%D8%A113.jpg">
+                <div class="text7"><a class="a" href="https://gpnashik.ac.in/Department/ddgm_profile#">Dress Design & Garment Manufacturing</a></div>
+                <img class="idd" src="https://www.decorilla.com/online-decorating/wp-content/uploads/2018/12/modern-office-design-airbnb-office-by-gensler.jpg">
+                <div class="text8"><a class="a" href="https://gpnashik.ac.in/Department/idd_profile#">Interior Design & Decoration</a></div>
+                <img class="e_tc" src="https://www.indiaeducation.net/imagesvr_ce/3516/electronics-and-comunication-engineering.jpg">
+                <div class="text9"><a class="a" href="https://gpnashik.ac.in/Department/entc_profile#">Electronics & Telecommunication Engineering</a></div>
+                <img class="plastic" src="https://puraenterprise.com/wp-content/uploads/sites/140/2018/12/ENGINEERING-PLASTICS1.png">
+                <div class="text10"><a class="a" href="https://gpnashik.ac.in/Department/ps_profile#">Plastic Engineering</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inst" id="inst">
+            <center>
+                <h1 class="inst_style">Instructions</h1><hr width="30%">
+                
+            </center>
+            <div class="inst0">
+            <div class="inst1">
+            <h1 >Our Home page consist of -</h1>
+            <h4 >i. Vision and Mission and information about departments of college.</h4>
+            <h4 >ii.  About us section provides information about our website.</h4>
+            <h4 >iii. Query section allows user to ask queries through mail.</h4>
+            <h4 >iv.  Contact us section provide details about phone number and address of the College.</h4>
+            </div>
+            <div class="inst2">
+            <h1 >User Section:</h1>
+            <h3 >If you are a new user create the account by clicking on sign up and then login else click on login.
+            Once login successfully user will be redirected to user home page through which user can perform process to access bonafide.</h3>
+            <h4 >Steps to access bonafide certificate</h4>
+            <h4 >i.  Select the reason for requirement of bonafide certificate.</h4>
+            <h4 >ii. Fill the details and download the application form.</h4>
+            <h4 >iii. Upload the required documents along with downloaded application form.</h4>
+            <h4 >iv. User must logout after the completion of process.</h4>
+            <h3 >User will receive the bonafide certificate once approved by admin.</h3>
+            </div>
+            <div class="inst3">
+            <h1 >Admin :</h1>
+            <h4 class=>i. If request approved, bonafide certificate will be sent to user's registered email</h4>
+            <h4 class=>ii. If request rejected, the reason of rejection will be sent to user's registered email</h4>
+            </div>
+            </div>
+           </div>
+
+    <div class="about_us" id="about_us">
+        <div class="blog1">
+             <h3 class="h3">About DIVS Bonafide Generator</h3>
+             <p class="content"><b><i>DIVS Bonafide Generator</i></b> is specially designed for students.
+                 Our website is initiative to provide solution to the problems faced by students while accessing bonafide certificate.
+                 Bonafide certificate is one of the important document required for many important forms but accessing it is very lengthy and time consuming process.
+                 By considering all these problems Our website creates a platform as per students and management convenience</p>
+        </div>
+        <div class="blog2">
+            <center>
+            <h3 class="h3_1">Why 'DIVS' ?</h3>
+            </center>
+             <p class="content">To access bonafide certificate students need to submit all the documents to college office manually and need to check the status everyday till he/she receives it.
+                 During covid 19 pandemic, education was conducted in online mode but students need to go to college office for getting bonafide certificate.
+                 Our website save student's time, provide students with certificate as early as possible, avoiding to visit office repeatively, and for proper management of data required while issuing certificate.
+                 </p>
+        </div>
+    </div>
+
+    <div  id="content">
+        <div id="v_m">
+            <h1 class="vm1">Vision</h1>
+            <p>To be a premier Technical Training and Development Institute catering to the skill and professional development in multi-domain for Successful employment/self-employment by offering certified and accredited NSQF compliant programmes. The Institute shall be the center for Excellence in skill development and community development through different training programmes, business incubation and Entrepreneurship development.</p>
+        </div>
+        <div id="vm_img">
+            <img src="https://mission-vision.org/wp-content/uploads/2016/06/MV_New_rgb.jpg">
+        </div>
+        <div id="v_m1">
+            <h1 class="vm2">Mission</h1>
+            <p>The Government Polytechnic, Nashik, an Autonomous Institute of Government of Maharashtra has the Mission to provide Education for skill Development, Engineering Diploma and continuing education Programmes for enhancement of employability skills of the aspirants in the job/self-employment through continually developing quality learning systems. The Institute aims at holistic and the student centric education in collaboration with business, industry and having practice based education.</p>
+        </div>
+    </div>
+
+    <div id="content1">
+        <center>
+        <h1 id="dept">Departments</h1>
+        </center>
+        <div id="depts1">
+            <img id="civil" src="https://www.accurate.in/engg/img/page/civil-engineering-branch.jpg">
+            <img id="mech" src="https://www.contaipolytechnic.com/wp-content/uploads/2015/09/engineering_mechanical_3042380_cropped.jpg">
+            <img id="electrical" src="https://www.mamse.in/img/eee.jpg">
+            <img id="comp" src="https://us.123rf.com/450wm/peshkova/peshkova2006/peshkova200631860/149692475-double-exposure-of-mans-hands-typing-over-computer-keyboard-and-science-theme-hologram-drawing-top-v.jpg?ver=6">
+            <img id="infotech" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&w=1000&q=80">
+        </div>
+    </div>
+
+   <div id="content2">
+       <div id="depts2">
+           <img id="automob" src="https://uswfoxtail.blob.core.windows.net/foxtail-prod-uploads/images/ThinkstockPhotos-15441.8821dc0b.fill-450x341.format-jpeg.jpg">
+           <img id="ddgm" src="https://drive.uqu.edu.sa/_/dfad/images/%D8%A7%D8%B2%D9%8A%D8%A7%D8%A113.jpg">
+           <img id="idd" src="https://www.decorilla.com/online-decorating/wp-content/uploads/2018/12/modern-office-design-airbnb-office-by-gensler.jpg">
+           <img id="e_tc" src="https://www.indiaeducation.net/imagesvr_ce/3516/electronics-and-comunication-engineering.jpg"> 
+           <img id="plastic" src="https://puraenterprise.com/wp-content/uploads/sites/140/2018/12/ENGINEERING-PLASTICS1.png">
+       </div>
+   </div>
+
+
+    <div class="footer" id="contact_us">
+        <div class="contact_us">
+            <p class="header1">Contact Us</p>
+             <p><i class="fa-solid fa-phone"></i> 97XXXXXXXX</p>
+             <p><i class="fa-solid fa-at"></i> divs975@gmail.com</p>
+             <p><i class="fa-solid fa-message"></i> 95XXXXXXXX</p>
+        </div>
+        <div class="clg_contact">
+            <p class="header2">  Government Polytechnic Nashik</p>
+             <p><i class="fa-solid fa-location-dot"></i>  Chehedi (B), Samangaon Road, Nashik-Road,
+             Nashik- 422 101, Maharashtra (India)</p>
+            <p><i class="fa-solid fa-phone"></i>  +91 253 2461221</p>
+            <p><i class="fa-solid fa-envelope"></i>  office.gpnashik@dtemaharashtra.gov.in</p>
+            <p>StatCounter - Free Web Tracker and Counter</p>
+        </div>
+    </div>
+
+    <script>
+         function togglePopup(){
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+
+        function togglePopup1(){
+            document.getElementById("popup-2").classList.toggle("active");
+        }
+
+        function togglePopup2(){
+            document.getElementById("popup-3").classList.toggle("active");
+        }
+
+
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "250px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+      
+    </script>
+</body>
+</html>

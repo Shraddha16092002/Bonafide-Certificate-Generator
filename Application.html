@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+
+    <style>
+        #btn2 {
+            margin-left: 820px;
+            height: 38px;
+            width: 149px;
+            border: 2px solid black;
+            border-radius: 17px;
+            font-size: 21px;
+            margin-top: 20px;
+        }
+
+        #btn2:hover {
+            margin-left: 820px;
+            height: 38px;
+            width: 149px;
+            border: 2px solid white;
+            border-radius: 17px;
+            font-size: 21px;
+            background-color: rgb(24, 1, 1);
+            color: azure;
+
+        }
+
+
+        #element {
+            color: black;
+            height: 681px;
+            width: 700px;
+            /* border: 2px solid black; */
+            margin: auto; 
+            padding-top: 16px;
+            background-color: white;
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+
+        body {
+            background-color: #337ab7;
+        }
+
+        h2 {
+            margin-left: 245px;
+        }
+
+        #btn3 {
+            margin-left: 542px;
+            height: 38px;
+            width: 149px;
+            border: 2px solid black;
+            border-radius: 17px;
+            font-size: 21px;
+            display: flex;
+            margin-top: -38px;
+            padding-left: 24px;
+            padding-top: 5px;
+
+        }
+        #btn3:hover {
+            margin-left: 542px;
+            height: 38px;
+            width: 149px;
+            border: 2px solid black;
+            border-radius: 17px;
+            font-size: 21px;
+            display: flex;
+            margin-top: -38px;
+            padding-left: 24px;
+            padding-top: 5px;
+            background-color: rgb(24, 1, 1);
+            color: azure;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="up_doc.html">
+        <div id="element">
+
+            <h2><u>Application Form</u></h2>
+            <label>Date : <span id="Fetchdate"></span> </label><br /><br />
+            <label>Applicant Name : <span id="t1"></span> </label><br />
+            <label>Roll No : <span id="t2"></span> </label><br />
+            <label>year : <span id="t3"></span> </label><br />
+            <label>Branch : <span id="t4"></span> </label><br />
+            <label>Date of Birth : <span id="t5"></span> </label><br /><br />
+
+            <p>To,<br />The Principal<br />Government Polytechnic,<br />Nashik</p><br />
+            <p>Subject :- Application in request of Bonafide certificate</p><br />
+            <p>Sir/Ma'am,</p>
+            <p>In accordance with the above subject, I <span id="t7"></span> , student of Goverment Polytechnic Nashik,
+                studying in <span id="t8"></span> of <span id="t9"></span> , need a bonafide certificate for <span
+                    id="t6"></span>.<br /> So, I kindly request you to issue me a bonafide certificate.</p><br />
+            <p>Thanking you,<br />yours Faithfully,<br /> <span id="t10"></span> </p><br /><br />
+            <script type="text/javascript">
+                document.getElementById("t1").innerHTML = localStorage.getItem("pname");
+                document.getElementById("t2").innerHTML = localStorage.getItem("proll");
+                document.getElementById("t3").innerHTML = localStorage.getItem("pyear");
+                document.getElementById("t4").innerHTML = localStorage.getItem("pbranch");
+                document.getElementById("t5").innerHTML = localStorage.getItem("pdob");
+                document.getElementById("t6").innerHTML = localStorage.getItem("choose");
+                document.getElementById("t7").innerHTML = localStorage.getItem("pname");
+                document.getElementById("t8").innerHTML = localStorage.getItem("pyear");
+                document.getElementById("t9").innerHTML = localStorage.getItem("pbranch");
+                document.getElementById("t10").innerHTML = localStorage.getItem("pname");
+
+                var today = new Date();
+                var c_date = today.getFullYear() + '/' + today.getMonth() + '/' + today.getDate();
+                document.getElementById("Fetchdate").innerHTML = c_date;
+
+            </script>
+
+
+        </div>
+
+        <input type="submit" id="btn2" value="Next">
+    </form>
+    <button onclick="download()" id="btn3">download</button>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script>
+    function download() {
+        var element = document.getElementById("element");
+        var opt={
+    //filename:'oxy.pdf',
+    filename:'oxy.pdf'
+
+};
+        html2pdf(element,opt);
+    }
+
+</script>
+
+</html>
