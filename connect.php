@@ -1,8 +1,8 @@
 <?php
-$servername="localhost";
-$username="root";
+$servername="";
+$username="";
 $password="";
-$dbname="project";
+$dbname=""; // add the required values here
 
 $conn=mysqli_connect($servername,$username,$password,$dbname);
 
